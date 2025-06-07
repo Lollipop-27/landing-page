@@ -1,0 +1,284 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+/* Structure is from class notes */
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+body {
+    font-family: "Rubik", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Elements */
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "Domine", Georgia, 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #1565c0;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0d47a1;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Navigation */
+nav {
+    margin-bottom: 1rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu a {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #004d40;
+    border-bottom: 2px solid transparent;
+    padding: 0.25rem;
+}
+
+.nav-menu a:hover {
+    border-bottom: 2px solid #004d40;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0.5rem auto 0 auto;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #e0f2f1;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.about h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.about p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #444;
+}
+
+/* Card Grid Layout */
+.card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+}
+
+.card-img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 0.5rem;
+}
+
+/* .card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin-top: 1rem;
+    list-style: none;
+} */
+
+
+/* Individual Cards */
+.card {
+    display: block;
+    padding: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #1565c0;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/* .card-grid li a.card {
+    display: block;
+    padding: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #1565c0;
+    font-weight: 500;
+    text-align: center;
+} */
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #0d47a1;
+}
+
+
+/* .card-grid li a.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #0d47a1;
+} */
+
+
+
+/* .project-category {
+    background-color: #f1f8e9;
+    padding: 1rem;
+    border-left: 5px solid #81c784;
+    border-radius: 4px;
+}
+
+.project-category h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-category li {
+    margin: 0.5rem 0;
+} */
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+/* Tablets and up */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project-category {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+}
+
+/* Desktops and up */
+@media (min-width: 1200px) {
+    .project-category {
+        flex: 1 1 calc(33.333% - 1rem);
+    }
+
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
+}
+
+/* clamp */
+
+/* Smooth scroll (optional)
+html {
+  scroll-behavior: smooth;
+} */
