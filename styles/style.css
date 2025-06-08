@@ -46,7 +46,7 @@ ul {
 /* Links */
 a {
     text-decoration: none;
-    color: #1565c0;
+    color: #0A15B8;
     transition: color 0.2s ease;
 }
 
@@ -89,34 +89,34 @@ nav {
 }
 
 .nav-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .logo {
-  height: 50px;
-  /* margin-bottom: 0.5rem; */
+    height: 50px;
+    /* margin-bottom: 0.5rem; */
 }
 
 .nav-menu {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  flex: 1;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex: 1;
 }
 
 .nav-menu a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: #1565c0;
-  font-weight: 600;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #1565c0;
+    font-weight: 600;
 }
 
 
@@ -125,7 +125,10 @@ nav {
 header {
     text-align: center;
     padding: 2rem 1rem;
-    background-color: #e0f7fa;
+    /* background-color: #e0f7fa; */
+    background: linear-gradient(to left, #f7cac9, #ffffff);
+    /* blue gradient */
+    /* color: white; */
     border-radius: 8px;
     margin-bottom: 2rem;
 }
@@ -205,13 +208,13 @@ main {
 }
 
 .project-category {
-  padding: 0 1rem;
+    padding: 0 1rem;
 }
 
 .project-category h2 {
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  padding: 0;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 0;
 }
 
 
