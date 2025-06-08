@@ -98,7 +98,7 @@ nav {
 }
 
 .logo {
-    height: 50px;
+    height: 5rem;
     /* margin-bottom: 0.5rem; */
 }
 
@@ -219,12 +219,33 @@ main {
 
 
 /* Footer */
-footer {
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 0.9rem;
-    color: #777;
+.contact-section {
+  text-align: center;
+  padding: 2rem 1rem;
 }
+
+.contact-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.icons a {
+  color: #1565c0;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #0d47a1;
+}
+
 
 /*--------------------------------------------------------------
 # Media Queries
@@ -266,9 +287,3 @@ footer {
     }
 }
 
-/* clamp */
-
-/* Smooth scroll (optional)
-html {
-  scroll-behavior: smooth;
-} */
